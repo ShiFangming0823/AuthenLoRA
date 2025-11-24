@@ -1,4 +1,4 @@
 # AuthenLoRA
-Official Code for AuthenLoRA: Entangling Stylization with Imperceptible Watermarks for Copyright-Secure LoRA Adapters
+Official Repository for Paper **AuthenLoRA: Entangling Stylization with Imperceptible Watermarks for Copyright-Secure LoRA Adapters**
 
-The code, weight and dataset will be available soon.
+Paper, code, dataset and model weights will be available soon.
