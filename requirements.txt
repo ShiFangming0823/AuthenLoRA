@@ -1,0 +1,15 @@
+lpips==0.1.4
+numpy==1.26.3
+diffusers==0.24.0
+huggingface-hub==0.21.4
+transformers==4.26.1
+accelerate==0.28.0
+toml==0.10.2
+einops==0.7.0
+imagesize==1.4.1
+tensorboard==2.18.0
+voluptuous==0.13.1
+pytorch-fid==0.3.0
+kornia==0.8.0
+opencv-python==4.8.1.78
+torchsummary==1.5.1
