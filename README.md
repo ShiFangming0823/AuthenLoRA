@@ -54,15 +54,15 @@ pip install requirements.txt
 ```
 
 ### Train
-[Train.md](Document/Train.md)
+[Train.md](document/Train.md)
 
 ### Generation and Evaluation
 
-[Generation_Evaluation.md](Document/Generation_Evaluation.md)
+[Generation_Evaluation.md](document/Generation_Evaluation.md)
 
 ### Merging Watermark Information into LoRA
 
-[Merging.md](Document/Merging.md)
+[Merging.md](document/Merging.md)
 
 ## Acknowledgements
 
