@@ -4,7 +4,9 @@ Official Repository for Paper **[AuthenLoRA: Entangling Stylization with Imperce
 
 ## About AuthenLoRA
 
-<img src="fig/Threat_Model.png" alt="Alt" align="center" style="zoom:60%;" />
+<div align="center">
+  <img src="fig/Threat_Model.png" width="60%">
+</div>
 
 In this work, we propose **AuthenLoRA**, a novel watermarking method that effectively protects the copyright of LoRA models by embedding imperceptible watermarks during the generation of stylized images. 
 
@@ -16,7 +18,9 @@ We jointly optimize style transfer and watermark embedding to achieve tight coup
 
 Kanade Hisaishi & Tamamo Cross suki suki :)
 
-<img src="fig/Visual_Results.png" align="center" style="zoom: 50%;" />
+<div align="center">
+  <img src="fig/Visual_Results.png" width="75%" alt="Visualization of AuthenLoRA">
+</div>
 
 ## Getting Started
 
