@@ -52,6 +52,15 @@ The dataset directory structure should be as follows:
 └── 00002.txt...
 ```
 
+To achieve optimal generation quality, we recommend utilizing base models that align with the specific stylistic attributes of the training datasets.
+
+| Dataset File Name | Base Model File Name | Download Link |
+| --- | --- | --- |
+| `Anime_Character.zip` | `anyloraCheckpoint_bakedvaeBlessedFp16.safetensors` | [Civitai Link](https://civitai.com/models/23900?modelVersionId=95489) |
+| `Realistic_Human.zip` | `v1-5-pruned-emaonly.safetensors` | [HuggingFace Link](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main) |
+| `PixelArt.zip` | `anyloraCheckpoint_bakedvaeBlessedFp16.safetensors` | [Civitai Link](https://civitai.com/models/23900?modelVersionId=95489) |
+| `Lolita.zip` | `majicmixRealistic_v7.safetensors` | [Civitai Link](https://civitai.com/models/43331/majicmix-realistic) |
+
 **Then run the following command to start the training process for LoRA and mapper:**
 
 ```bash
@@ -105,4 +114,5 @@ If you use your own stylized dataset, ensure that the ``validate_prompt_prefix``
 You can:
 
 * use trained LoRA weight and mapper weight to generate stylized and watermarked images using [our provided code](Generation_Evaluation.md). 
+
 * use mapper to [embed the watermark information into the LoRA module](Merging.md), and then use the watermarked LoRA to generate images using the official Stable Diffusion implementation.
