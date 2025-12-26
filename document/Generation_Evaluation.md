@@ -40,10 +40,19 @@ python utils/Eval.py
 | `generate_image`         | bool | True    | If set to True, the script will generate images using LoRA and a mapper. If set to False, the image generation process will be skipped. |
 | `validate_prompt_file`   | str  |         | Includes a series of prompts for generating evaluation images. |
 | `validate_image_num`     | int  | 5       | Control how many images each prompt generates.               |
-| `validate_prompt_prefix` | str  |         | Refer to [Train.md](Train.md)                                |
+| `validate_prompt_prefix` | str  |         | Refer to [Train.md](Train.md). This parameter should match the same setting during training. |
 | `sample_sampler`         | str  | ddim    |                                                              |
 | `steps`                  | int  | 20      | Denoising steps                                              |
 | `CFG`                    | int  | 7       | Classifier-Free Guidance Scale                               |
+
+The ``validate_prompt_prefix`` and in our provided trained AuthenLoRA model is shown in the table.
+
+| Model File Name   | `validate_prompt_prefix`                                     |
+| ------------------- | ------------------------------------------------------------ |
+| Anime_Character | kanadehisaishi, kanade hisaishi, short hair, bangs, black hair, red eyes, bow, hair bow, red bow, skirt, shirt, school uniform, white shirt, short sleeves, pleated skirt, serafuku, sailor collar, blue skirt, neckerchief, blue sailor collar, green neckerchief, kitauji high school uniform, masterpiece, best quality, high resolution, unity 8k wallpaper, illustration, beautiful detailed eyes, extremely detailed face, perfect lighting, extremely detailed CG, perfect hands, perfect anatomy |
+| Realistic_Human | RyanGosling, A stunning closeup intricate full colour portrait of (man:1), epic character composition, sharp focus, natural lighting, subsurface scattering, solo, close-up, portrait |
+| PixelArt        | pixel, pixel art, toon \(style\)                             |
+| Lolita          | lo dress, layered dress, long dress, lace-trimmed dress, frills, puffy sleeves, wide sleeves, bow, jewelry, long sleeves, hat, (pink dress:1.2), best quality, masterpiece, photorealistic, solo, full body, standing, long black straight hair, blunt bangs, looking at viewer, smile, detailed_background |
 
 **Clean Image Evaluation**
 
@@ -74,3 +83,4 @@ python utils/Eval.py
 After each evaluation, the terminal will print the current evaluation type and result. 
 
 After all evaluations are complete, the terminal will print all results.
+
