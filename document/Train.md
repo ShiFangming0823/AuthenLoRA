@@ -19,7 +19,7 @@ Then run the following command to start the training process for watermark encod
 python train_1_encoder&decoder.py
 	--pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" \
 	--epochs 50 \
-    --batch_size 2 \
+    --batch_size 2 \ # If your vRAM is less than 24GB, it is recommended to set batch_size to 1
     --bit_num 48 \
 	--dataset /path/to/dataset_dir \
 	--output_dir /path/to/save_dir 
